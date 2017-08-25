@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>Yo것들</title>
+  <style>
+    * { margin: 0; padding: 0; text-decoration: none; }
+    html, body { box-sizing: border-box; height: 100%: }
+    li { list-style: none; }
+
+    .clearfix:after {
+      display: block;
+      content: '';
+      clear: both;
+    }
+
+    header {
+      
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+      
+    }
+
+   nav {
+     
+      width: 1200px;
+      height: 60px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      
+    }
+
+   nav div {
+      float: left;
+    }
+
+   .logo {
+      margin-left: 70px;
+    }
+
+
+
+   .search-box {
+      width: 700px;
+      /*margin-left: 8%;*/
+      
+    }
+
+   .search-box > input {
+      width: 100%;
+      padding: 0 10px;
+      height: 40px;
+      border: 0;
+      font-size: 2rem;
+      border-radius: 3px;
+      background-color: #efefef;
+      border-top-right-radius: 0; 
+      border-bottom-right-radius: 0; 
+    }
+    .text-color { color: #fff;}
+    .text-color:hover { color: #efefef;}
+   #search-btn {
+      display: inline-block;
+      /*margin-left: 30%;*/
+      height:40px;
+      border-top-left-radius: 0; 
+      border-bottom-left-radius: 0; 
+    }
+
+    #plus-btn, #del-btn {
+      display: inline-block;
+      height: 40px;
+    }
+
+    .pd-input {
+      text-align: center;
+    }
+    .common {
+
+      width: 300px;
+      margin: 10px auto;
+    }
+
+    
+
+
+    .plus-box {
+      margin-left: 30px;
+    }
+    .del-box {
+      margin-left: 5px;
+    }
+
+
+
+   section {
+      padding: 50px 0;
+      background-color: #f1f1f1 ;
+      width: 100%;
+      height: 100vh;
+    }
+    section ul {
+      width: 1280px;
+      margin: 0 auto;
+    }
+    .item-box {
+      width: 240px;
+      margin: 20px 40px;
+      background: #fff;
+      /*border: 1px solid #ddd;*/
+      border-radius: 5px;
+      /*overflow: hidden;*/
+      float: left;
+      box-shadow: 1px 1px #ddd;
+      /*text-align: center;*/
+    }
+    .size {
+      vertical-align: center;
+      text-align: center;
+      width: 240px;
+      height: 240px;
+      overflow: hidden;
+    }
+    
+
+
+    /* card design*/
+    section {
+      padding: 50px 0;
+      background-color: #f1f1f1;
+      width: 100%;
+    }
+    section ul {
+      width: 1280px;
+      margin: 0 auto;
+    }
+    .item-box {
+      width: 240px;
+      margin: 20px 40px;
+      background: #fff;
+      /*border: 1px solid #ddd;*/
+      border-radius: 5px;
+      overflow: hidden;
+      float: left;
+      box-shadow: 1px 1px #ddd;
+      /*text-align: center;*/
+    }
+    input[type=checkbox].hidden{
+    opacity: 0;
+    }
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <nav class='clearfix'>
+        <div class="logo">
+          <p>Yo것들</p>
+        </div>
+        <div class="search-box">
+          <input type="text" placeholder="...Search">
+        </div>
+        <div class="search-btn">
+          <button id='search-btn' class='btn btn-default'>search</button>
+        </div>
+        <div class="plus-box">
+          <button id='plus-btn' class='btn btn-danger'>add</button>
+        </div>
+        <div class="del-box">
+          <button id='del-btn' class='btn text-color'>삭제</button>
+        </div>
+      </nav>
+      <div class="pd-input">
+      </div>
+      
+      <!-- input 정보들 담을 div 자리 -->
+    </header>
+    <section>
+      <ul class="wish-list clearfix">
+      </ul>
+    </section>
+    
+    <!--<button id='get-btn'>GET</button>-->
+  </div>
+  <script src='js/index.js'></script>
+</body>
+</html>
