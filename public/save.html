@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+  <title>To Do List</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style: none;
+    }
+    /*http://cafefiles.naver.net/MjAxNzA4MTdfMzYg/MDAxNTAyOTY2ODQ3MTUy.v1DcToVJYVOK2tiOGaGja70Taele17Wq1-o9li2YI-cg.ZvDDeSv1Q_3CnJO6bG4feLI-4H1EJ0brmSEsUrog2NYg.JPEG.himura111/bike.jpg*/
+    /*http://cafefiles.naver.net/MjAxNzA4MTdfMjQz/MDAxNTAyOTcxNDczNTA0.hmPA3kzFS7lDiqnatP9cmsm12D-hiVJiENkWArK5spIg.Hss_b3nOU-9_H04xk1OgksemXIcem1jbjoSIDh8UZ34g.PNG.himura111/text_list_bullets.png*/
+    /* Reset */
+    html, body {
+      height: 100%;
+      background: url(img/bike.jpg) no-repeat center center fixed;
+      background-size: cover;
+    }
+    /* clearfix */
+    .clearfix:after {
+      display: block;
+      content: '';
+      clear: both;
+    }
+    /* 전체를 감싸는 div */
+    #wrap {
+      height: 100%;
+    }
+    /* contents frame */
+    .contents {
+      width: 40%;
+      margin: 4% auto;
+      padding-left: 50px;
+      border: 0;
+      text-align: center;
+    }
+    /* input text style */
+    .inputSection > input {
+      display: inline-block;
+      vertical-align: middle;
+      width: 70%;
+      height: 100%;
+      font-size: 2em;
+      color: white;
+      border: 0.5 solid lightgray;
+      border-style: none none solid none;
+      background: inherit;
+    }
+    /* input:focus style */
+    .inputSection > input:focus, button:focus {
+      outline: none;
+    }
+    /* 공통 button style */
+    button {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 10px;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      border: 0;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: lightgray;
+      background: inherit;
+      transition: 0.3s;
+    }
+    /* button event */
+    button:active {
+      transform: translateY(6px);
+    }
+
+    ul li {
+      display: inline-block;
+      margin-top: 10px;
+      width: 90%;
+      font-size: 1.5em;
+      border: 0;
+      color: lightgray;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    h1 {
+      margin: 10% auto 0;
+      width: 25%;
+      font-size: 4em;
+      text-align: center;
+      border: 0;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <h1><span class='bold'>T</span>o <span class='bold'>D</span>o <span class='bold'>l</span>ist</h1>
+    <div class="contents clearfix">
+      <div class="inputSection">
+          <input type="toDo" id='inputTask'><button id='inputBtn'>+</button><button id='searchBtn'><i class='material-icons md-48'>search</i></button>
+      </div>
+        <ul class='toDoList'>
+          
+        </ul>
+    </div>
+  </div>
+
+  <script src='js/index.js'></script>
+</body>
+</html>
